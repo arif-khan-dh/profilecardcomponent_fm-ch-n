@@ -1,0 +1,34 @@
+:root {
+    --card-width: #{toRem(326px)};
+    --card-height: #{toRem(378px)};
+}
+
+.card {
+    border-radius: toRem(10px);
+    background-image: url(../../images/bg-pattern-card.svg);
+    overflow: hidden;
+
+    width: var(--card-width);
+    height: var(--card-height);
+
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: column nowrap;
+
+    @include breakpoint-up(small) {
+        width: calc(calc(var(--card-width) - #{toRem(120px)}) + 20%);
+        max-width: toRem(360px);
+    }
+
+
+    .empty-top {
+        height: 37%;
+        
+    }
+    
+
+    @import 'profile';
+
+    @import 'social-stats';
+
+}

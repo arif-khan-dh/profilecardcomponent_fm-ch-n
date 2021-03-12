@@ -1,0 +1,54 @@
+.profile {
+    height: 38%;
+    background-color: white;
+
+    .profile-content-wrapper {
+        // height: calc(100% + calc(2 * #{toRem(33px)}));
+        height: calc(100% + #{toRem(53px)});
+        margin-top: calc(-1 * #{toRem(53px)});
+        display: flex;
+        flex-flow: column nowrap;
+
+
+        .picture {
+            text-align: center;
+
+            img {
+                display: inline-block;
+                padding: toRem(5px);
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+
+
+        .info {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+
+
+            .personal {
+                font-size: $font-md;
+                
+                .name {
+                    color: $veryDarkSaturatedBlue;
+                    font-weight: 700;
+                }
+
+                .age {
+                    margin-left: toRem(8px);
+                    color: $darkGrayishBlue;
+                }
+            }
+
+            .location {
+                margin-top: toRem(10px);
+                color: $darkGrayishBlue;
+                font-size: $font-sm;
+            }
+        }
+    }
+}

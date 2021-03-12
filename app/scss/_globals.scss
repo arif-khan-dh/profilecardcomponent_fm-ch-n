@@ -16,4 +16,16 @@ body {
 
     font-family: "Kumbh", sans-serif;
     font-size: $font-xsm;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $darkCyan;
+    background-image:
+        url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-x: right 50vw, left 45vw;
+    background-position-y: bottom 40vh,top 44vh;
 }
